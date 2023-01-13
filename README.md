@@ -26,3 +26,9 @@ Users of FootballerStats data visualizer are able to:
 - [x] Thursday: Finish project
 
 ## Wireframes 
+
+![alt text](./images/wireframe.png)
+
+<p>
+    <img src="https://r-charts.com/en/ranking/radar-chart_files/figure-html/radarchart-area.png">
+</p>
