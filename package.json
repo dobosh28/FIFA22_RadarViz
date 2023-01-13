@@ -1,0 +1,38 @@
+{
+  "name": "footballerstats",
+  "version": "1.0.0",
+  "description": "FootballerStats is a data visualizer that allows users to compare the statistics and attributes of two football (soccer) players in a form of a radar chart and a list of statistics for each. Users will be able to use three drop down menus (league, team, player) to select a desired player and diplay their information (age, height, nationality, passing, dribbling, shooting, etc.), photo, and radar chart which shows 6 attribues: ATT, SPD, DEF, POW, STA, TEC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobosh28/FootballerStats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobosh28/FootballerStats/issues"
+  },
+  "homepage": "https://github.com/dobosh28/FootballerStats#readme",
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "core-js": "^3.27.1",
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "regenerator-runtime": "^0.13.11",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
