@@ -1,10 +1,9 @@
-const csvtojson = require('csvtojson')
-const csvfilepath = "./data/data.csv"
+import { createLeagueDropDown} from "./scripts/league_dropdown.js";
+import { createTeamDropDown } from "./scripts/team_dropdown.js";
 
-
-
-csvtojson()
-.fromFile(csvfilepath)
-.then((json) => {
-    console.log(json)
-})
+document.addEventListener("DOMContentLoaded", function() {
+    createLeagueDropDown();
+    createTeamDropDown();
+    //updateTeamDropDown();
+    //updateTeamOptions();
+  });
