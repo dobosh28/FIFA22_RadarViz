@@ -1,22 +1,31 @@
-/*!********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/dropdown.scss ***!
-  \********************************************************************************************************/
-.dropdown {
-    background-color: yellowgreen;
-    height: 200px;
-    width: 200px;
-
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/menus.scss ***!
+  \*****************************************************************************************************/
+#menus {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/characteristics.scss ***!
+  \***************************************************************************************************************/
+#player-characteristics {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+/*!******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/charts.scss ***!
+  \******************************************************************************************************/
+#canvas-container {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    text-align: center;
 }
 
-label {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-
-select {
-    font-size: large;
-    font-weight: 200;
-
-}
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
@@ -50,8 +59,4 @@ main {
   justify-content: space-between;
   align-items: center;
   height: 90%;
-}
-
-#canvas-container {
-  width: 30%;
 }

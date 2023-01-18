@@ -1,4 +1,8 @@
-@import url(./styles/dropdown.scss);
+// @import url(./styles/dropdown_1.scss);
+// @import url(./styles/dropdown_2.scss);
+@import url(./styles/menus.scss);
+@import url(./styles/characteristics.scss);
+@import url(./styles/charts.scss);
 
 body {
     background-color: rgba(62, 138, 159, 0.202);
@@ -33,6 +37,3 @@ main {
     height: 90%;
 }
 
-#canvas-container {
-    width: 30%;
-}

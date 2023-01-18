@@ -19,42 +19,82 @@
         </nav>
     </header>
 
-    <div class="dropdown">
-        <div class="league-dropdown">
-            <label for="league">LEAGUE</label>
-            <select name="league" id="league-select"></select>
-        </div>
+    <div id="menus">
 
-        <div>
-            <label for="team-dropdown">TEAM</label>
-            <select name="team" id="team-select"></select>
-        </div>
-
-        <div>
-            <label for="player-dropdown">PLAYER</label>
-            <select name="player" id="player-select"></select>
-        </div>
-    </div>
-
+        <div class="dropdown-left">
+            <div class="league1-dropdown">
+                <label for="league1">LEAGUE</label>
+                <select name="league1" id="league1-select"></select>
+            </div>
     
+            <div>
+                <label for="team1-dropdown">TEAM</label>
+                <select name="team1" id="team1-select"></select>
+            </div>
+    
+            <div>
+                <label for="player1-dropdown">PLAYER</label>
+                <select name="player1" id="player1-select"></select>
+            </div>
+        </div>
+    
+        <div class="dropdown-right">
+            <div class="league2-dropdown">
+                <label for="league2">LEAGUE</label>
+                <select name="league2" id="league2-select"></select>
+            </div>
+    
+            <div>
+                <label for="team2-dropdown">TEAM</label>
+                <select name="team2" id="team2-select"></select>
+            </div>
+    
+            <div>
+                <label for="player2-dropdown">PLAYER</label>
+                <select name="player2" id="player2-select"></select>
+            </div>
+        </div>
+    </div>
+
     <div id="canvas-container">
-        <canvas id="radar-chart"></canvas>
+        <canvas id="radar-chart-1"></canvas>
+        <canvas id="radar-chart-2"></canvas>
     </div>
 
+   
 
+    <div id="player-characteristics">
 
-    <div id="player-photo">
-        <img id="player-photo" src="">
+        <div class="player-1">
+            <div id="player-photo">
+                <img id="player1-photo" src="">
+            </div>
+        
+            <div>
+                <h2 id="player1-name"></h2>
+                <p id="player1-age"></p>
+                <p id="player1-nationality"></p>
+                <p id="player1-position"></p>
+                <p id="preferred1-foot"></p>
+            </div>
+        </div>
+        
+        <div class="player-2">
+            <div id="player-photo">
+                <img id="player2-photo" src="">
+            </div>
+
+            <div>
+                <h2 id="player2-name"></h2>
+                <p id="player2-age"></p>
+                <p id="player2-nationality"></p>
+                <p id="player2-position"></p>
+                <p id="preferred2-foot"></p>
+            </div>
+        </div>
+        
     </div>
-
-
-    <div>
-        <h2 id="player-name"></h2>
-        <p id="player-age"></p>
-        <p id="player-nationality"></p>
-        <p id="player-position"></p>
-        <p id="preferred-foot"></p>
-    </div>
+    
 
 </body>
 </html>
