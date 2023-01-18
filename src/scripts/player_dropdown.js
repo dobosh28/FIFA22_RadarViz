@@ -16,7 +16,9 @@ export function createPlayerDropDown() {
             if (player.Club.toLowerCase().replace(' ', '-') === selectedTeam) {
                 const option = document.createElement('option');
                 option.value = player.ID;
+                // option.text = player.Name;
                 option.text = player.Name;
+
                 playerSelect.appendChild(option);
             }
         });

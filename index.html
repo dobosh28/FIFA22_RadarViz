@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./dist/main.css"/>
     <link rel="shortcut icon" href="./favicon.png" type="image/png">
     <script src="./dist/main.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    //<script src="https://d3js.org/d3.v7.min.js"></script>
     <title>FootballerStats</title>
 </head>
 <body>
@@ -20,18 +20,40 @@
     </header>
 
     <div class="dropdown">
-        <label for="league">LEAGUE</label>
-        <select name="league" id="league-select"></select>
+        <div class="league-dropdown">
+            <label for="league">LEAGUE</label>
+            <select name="league" id="league-select"></select>
+        </div>
+
+        <div>
+            <label for="team-dropdown">TEAM</label>
+            <select name="team" id="team-select"></select>
+        </div>
+
+        <div>
+            <label for="player-dropdown">PLAYER</label>
+            <select name="player" id="player-select"></select>
+        </div>
     </div>
 
-    <div>
-        <label for="team">TEAM</label>
-        <select name="team" id="team-select"></select>
+    
+    <div id="canvas-container">
+        <canvas id="radar-chart"></canvas>
     </div>
 
+
+
+    <div id="player-photo">
+        <img id="player-photo" src="">
+    </div>
+
+
     <div>
-        <label for="player">PLAYER</label>
-        <select name="player" id="player-select"></select>
+        <h2 id="player-name"></h2>
+        <p id="player-age"></p>
+        <p id="player-nationality"></p>
+        <p id="player-position"></p>
+        <p id="preferred-foot"></p>
     </div>
 
 </body>
