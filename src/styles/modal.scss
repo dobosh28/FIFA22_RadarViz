@@ -3,10 +3,11 @@
     padding: 1em 2em;
     color: #fff;
     border: 0;
+    top: 20px;
 }
 
 .button:hover {
-    background: #333;
+    transform: scale(1.1);
 }
 
 .modal {

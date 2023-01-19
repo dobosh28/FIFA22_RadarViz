@@ -6,6 +6,22 @@
     justify-content: space-between;
     background-color: aliceblue;
 }
+
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 500;
+}
+
+.dropdown-left {
+    width: 200px;
+    margin-left: 2cm;
+}
+
+.dropdown-right {
+    width: 200px;
+    margin-right: 2cm;
+}
 /*!***************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/characteristics.scss ***!
   \***************************************************************************************************************/
@@ -15,17 +31,27 @@
     background-color: lightblue;
     margin-left: 1cm;
     margin-right: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.player-1 {
+    margin-left: 1cm;
+}
+
+.player-2 {
+    margin-right: 1cm;
 }
 /*!******************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/charts.scss ***!
   \******************************************************************************************************/
 #canvas-container {
     display: flex;
-    justify-content: space-between;
-    width: 35%;
-    text-align: center;
-    align-items: center;
+    justify-content: center;
+    width: 32%;
+    margin-left: 500px;
 }
+
 
 /*!*****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/modal.scss ***!
@@ -35,10 +61,11 @@
     padding: 1em 2em;
     color: #fff;
     border: 0;
+    top: 20px;
 }
 
 .button:hover {
-    background: #333;
+    transform: scale(1.1);
 }
 
 .modal {
@@ -91,6 +118,48 @@
 }
 
 
+/*!******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/header.scss ***!
+  \******************************************************************************************************/
+header {
+    background-color: #2f8eb4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 6px solid #702fe1;
+    height: 10%;
+}
+
+header h1 {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+}
+
+
+.github-logo {
+    width: 40px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.github-logo:hover {
+    transform: scale(1.1);
+}
+
+.linkedin-logo {
+    width: 40px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.linkedin-logo:hover {
+    transform: scale(1.1);
+}
+
+
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
@@ -100,23 +169,6 @@ body {
   height: 100vh;
   overflow: auto;
   position: relative;
-}
-
-header {
-  background-color: #2f8eb4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  border-bottom: 6px solid #702fe1;
-  height: 10%;
-}
-
-header h1 {
-  font-size: 48px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  line-height: 2;
 }
 
 main {

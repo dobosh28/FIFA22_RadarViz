@@ -1,0 +1,38 @@
+header {
+    background-color: #2f8eb4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 6px solid #702fe1;
+    height: 10%;
+}
+
+header h1 {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+}
+
+
+.github-logo {
+    width: 40px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.github-logo:hover {
+    transform: scale(1.1);
+}
+
+.linkedin-logo {
+    width: 40px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.linkedin-logo:hover {
+    transform: scale(1.1);
+}
+

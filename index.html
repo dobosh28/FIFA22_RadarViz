@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./dist/main.css" />
     <link rel="shortcut icon" href="./favicon.png" type="image/png">
     <script src="./dist/main.js"></script>
-    //
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <title>FootballerStats</title>
 </head>
@@ -17,12 +16,17 @@
     <header>
         <h1>FootballerStats</h1>
         <nav>
-            <a href="http://www.linkedin.com/in/yosypdobosh" target="_blank" class="image-link">
-                <img src="">
+            <a href="http://www.linkedin.com/in/yosypdobosh" target="_blank">
+                <img class="linkedin-logo" src="./images/LI-In-Bug.png" alt="">
             </a>
-            <a href="http://https://github.com/dobosh28" target="_blank"></a>
+
+            <a href="https://github.com/dobosh28" target="_blank">
+                <img class="github-logo" src="./images/github-mark.png" alt="">
+            </a>
 
             <button id="modal-button" class="button">Info</button>
+
+            <!-- <img class="modal-button" src="./images/info.png" alt=""> -->
 
             <div id="just-modal" class="modal">
                 <div class="modal-content">
@@ -31,10 +35,9 @@
                         <h2>Instructions</h2>
                     </div>
                     <div class="modal-body">
-                        <p>Hello I am a modal</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure nisi distinctio perspiciatis
-                            suscipit dicta, sit accusantium alias, at quam sequi quibusdam culpa sunt consequatur illo,
-                            eum nam corporis fugiat maiores.</p>
+                        <p>Navigate to the dropdown menu section where you can select the desired league, team, and player.</p>
+                        <p>Once you select the player, the radar chart will get populated with their data and their information will display at the bottom</p>
+                        <p>You can compare two players!</p>
                     </div>
                 </div>
             </div>
@@ -45,34 +48,36 @@
 
         <div class="dropdown-left">
             <div class="league1-dropdown">
-                <label for="league1">LEAGUE</label>
-                <select name="league1" id="league1-select"></select>
+                <label class="label" for="league1">LEAGUE</label>
+                <select name="league1" id="league1-select">
+                    <option selected disabled>Choose league</option>
+                </select>
             </div>
 
             <div>
-                <label for="team1-dropdown">TEAM</label>
+                <label class="label" for="team1-dropdown">TEAM</label>
                 <select name="team1" id="team1-select"></select>
             </div>
 
             <div>
-                <label for="player1-dropdown">PLAYER</label>
+                <label class="label" for="player1-dropdown">PLAYER</label>
                 <select name="player1" id="player1-select"></select>
             </div>
         </div>
 
         <div class="dropdown-right">
             <div class="league2-dropdown">
-                <label for="league2">LEAGUE</label>
+                <label class="label" for="league2">LEAGUE</label>
                 <select name="league2" id="league2-select"></select>
             </div>
 
             <div>
-                <label for="team2-dropdown">TEAM</label>
+                <label class="label" for="team2-dropdown">TEAM</label>
                 <select name="team2" id="team2-select"></select>
             </div>
 
             <div>
-                <label for="player2-dropdown">PLAYER</label>
+                <label class="label" for="player2-dropdown">PLAYER</label>
                 <select name="player2" id="player2-select"></select>
             </div>
         </div>
@@ -97,7 +102,7 @@
                 <p id="player1-age"></p>
                 <p id="player1-nationality"></p>
                 <p id="player1-position"></p>
-                <p id="preferred1-foot"></p>
+                <p id="player1-foot"></p>
             </div>
         </div>
 
@@ -111,7 +116,7 @@
                 <p id="player2-age"></p>
                 <p id="player2-nationality"></p>
                 <p id="player2-position"></p>
-                <p id="preferred2-foot"></p>
+                <p id="player2-foot"></p>
             </div>
         </div>
 
