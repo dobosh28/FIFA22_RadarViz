@@ -1,6 +1,6 @@
 # FootballerStats
 
-FootballerStats is a data visualizer that allows users to compare the statistics and attributes of two football (soccer) players in a form of a radar chart and a list of statistics for each. Users will be able to use three drop down menus (league, team, player) to select a desired player and diplay their information (age, height, nationality, passing, dribbling, shooting, etc.), photo, and radar chart which shows 6 attribues: ATT, SPD, DEF, POW, STA, TEC. 
+FootballerStats is a data visualizer that allows users to compare the statistics and attributes of two football (soccer) players in a form of a radar chart and a list of statistics for each. Users will be able to use three drop down menus (league, team, player) to select a desired player and diplay their information (name, age, height, nationality, position, preferred foot ), photo, and radar chart which shows 6 attribues: Attack, Skill, Power, Movement, Mental, Defense. 
 
 ## Functionality & MVPs
 
@@ -8,7 +8,10 @@ Users of FootballerStats data visualizer are able to:
 
 - [x] Compare the statistics and attributes of two players 
 - [x] Use three drop down menus to find a player based on their league and team
+![alt text](./images/player_dropdown.png)
 - [x] Display interactive radar chart
+![alt text](./images/radar_chart.png)
+![alt text](./images/chart_attribute_logic.png)
 
 ## Technologies, Libraries, APIs
 

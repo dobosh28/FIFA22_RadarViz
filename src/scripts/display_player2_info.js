@@ -9,6 +9,7 @@ export function displayPlayer2Info() {
         document.getElementById('player2-photo').src = playerData.Photo;
         document.getElementById('player2-name').innerHTML = `Name: ${playerData.Name}`;
         document.getElementById('player2-age').innerHTML = `Age: ${playerData.Age}`;
+        document.getElementById('player2-height').innerHTML = `Height: ${playerData.Height}`;
         document.getElementById('player2-nationality').innerHTML = `Nationality: ${playerData.Nationality}`;
         document.getElementById('player2-position').innerHTML = `Position: ${playerData.Position}`;
         document.getElementById('player2-foot').innerHTML = `Preferred foot: ${playerData["Preferred Foot"]}`;
