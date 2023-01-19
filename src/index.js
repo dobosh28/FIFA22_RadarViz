@@ -1,5 +1,6 @@
 import Chart from 'chart.js/auto';
-import * as players from './data/data.json'
+import * as players from './data/data.json';
+
 
 import { createLeague1DropDown} from "./scripts/league1_dropdown.js";
 import { createTeam1DropDown } from "./scripts/team1_dropdown.js";
@@ -12,6 +13,24 @@ import { createPlayer2DropDown } from './scripts/player2_dropdown';
 import { displayPlayer2Info } from './scripts/display_player2_info';
 
 document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById('just-modal');
+  const modalBtn = document.getElementById('modal-button');
+  const closeBtn = document.getElementsByClassName('close-button')[0];
+
+  modalBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal){
+      modal.style.display = 'none'
+    }
+  })
+
   createLeague1DropDown();
   createTeam1DropDown();
   createPlayer1DropDown();
@@ -27,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     data: {
       labels: ['Attack', 'Skill', 'Power', 'Movement', 'Mental', 'Defense'],
       datasets: [{
-        label: 'Player Attributes',
+        label: 'Player 1',
         data: [],
         fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
@@ -90,10 +109,10 @@ document.addEventListener("DOMContentLoaded", function() {
     data: {
       labels: ['Attack', 'Skill', 'Power', 'Movement', 'Mental', 'Defense'],
       datasets: [{
-        label: 'Player Attributes',
+        label: 'Player 2',
         data: [],
         fill: true,
-        backgroundColor: 'rgba(300, 80, 132, 0.2)',
+        backgroundColor: 'rgba(13, 135, 238, 0.35)',
         borderColor: 'rgb(50, 88, 168)',
         pointBackgroundColor: 'rgb(50, 52, 168)',
         pointBorderColor: '#fff',

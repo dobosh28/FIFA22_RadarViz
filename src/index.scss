@@ -3,12 +3,13 @@
 @import url(./styles/menus.scss);
 @import url(./styles/characteristics.scss);
 @import url(./styles/charts.scss);
+@import url(./styles/modal.scss);
 
 body {
     background-color: rgba(62, 138, 159, 0.202);
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 

@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/main.css"/>
+    <link rel="stylesheet" href="./dist/main.css" />
     <link rel="shortcut icon" href="./favicon.png" type="image/png">
     <script src="./dist/main.js"></script>
-    //<script src="https://d3js.org/d3.v7.min.js"></script>
+    //
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <title>FootballerStats</title>
 </head>
+
 <body>
     <header>
         <h1>FootballerStats</h1>
         <nav>
-            <a href="http://www.linkedin.com/in/yosypdobosh" target="_blank" ></a>
+            <a href="http://www.linkedin.com/in/yosypdobosh" target="_blank" class="image-link">
+                <img src="">
+            </a>
             <a href="http://https://github.com/dobosh28" target="_blank"></a>
+
+            <button id="modal-button" class="button">Info</button>
+
+            <div id="just-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close-button">&times;</span>
+                        <h2>Instructions</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Hello I am a modal</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure nisi distinctio perspiciatis
+                            suscipit dicta, sit accusantium alias, at quam sequi quibusdam culpa sunt consequatur illo,
+                            eum nam corporis fugiat maiores.</p>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -26,29 +48,29 @@
                 <label for="league1">LEAGUE</label>
                 <select name="league1" id="league1-select"></select>
             </div>
-    
+
             <div>
                 <label for="team1-dropdown">TEAM</label>
                 <select name="team1" id="team1-select"></select>
             </div>
-    
+
             <div>
                 <label for="player1-dropdown">PLAYER</label>
                 <select name="player1" id="player1-select"></select>
             </div>
         </div>
-    
+
         <div class="dropdown-right">
             <div class="league2-dropdown">
                 <label for="league2">LEAGUE</label>
                 <select name="league2" id="league2-select"></select>
             </div>
-    
+
             <div>
                 <label for="team2-dropdown">TEAM</label>
                 <select name="team2" id="team2-select"></select>
             </div>
-    
+
             <div>
                 <label for="player2-dropdown">PLAYER</label>
                 <select name="player2" id="player2-select"></select>
@@ -61,7 +83,7 @@
         <canvas id="radar-chart-2"></canvas>
     </div>
 
-   
+
 
     <div id="player-characteristics">
 
@@ -69,7 +91,7 @@
             <div id="player-photo">
                 <img id="player1-photo" src="">
             </div>
-        
+
             <div>
                 <h2 id="player1-name"></h2>
                 <p id="player1-age"></p>
@@ -78,7 +100,7 @@
                 <p id="preferred1-foot"></p>
             </div>
         </div>
-        
+
         <div class="player-2">
             <div id="player-photo">
                 <img id="player2-photo" src="">
@@ -92,9 +114,10 @@
                 <p id="preferred2-foot"></p>
             </div>
         </div>
-        
+
     </div>
-    
+
 
 </body>
+
 </html>
