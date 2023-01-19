@@ -1,6 +1,6 @@
-# FootballerStats
+# FIFA22_RadarViz
 
-FootballerStats is a data visualizer that allows users to compare the statistics and attributes of two football (soccer) players in a form of a radar chart and a list of statistics for each. Users will be able to use three drop down menus (league, team, player) to select a desired player and diplay their information (name, age, height, nationality, position, preferred foot ), photo, and radar chart which shows 6 attribues: Attack, Skill, Power, Movement, Mental, Defense. 
+FIFA22_RadarViz is a data visualizer that allows users to compare the statistics and attributes of two football (soccer) players in a form of a radar chart and a list of statistics for each. Users will be able to use three drop down menus (league, team, player) to select a desired player and diplay their information (name, age, height, nationality, position, preferred foot ), photo, and radar chart which shows 6 attribues: Attack, Skill, Power, Movement, Mental, Defense. 
 
 ## Functionality & MVPs
 
