@@ -15,6 +15,15 @@ header h1 {
     line-height: 2;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
 
 .github-logo {
     width: 40px;

@@ -1,4 +1,4 @@
-import * as players from '../data/data.json';
+import players from '../data/data.json';
 
 export function createPlayer1DropDown() {
     const team1Select = document.getElementById('team1-select');

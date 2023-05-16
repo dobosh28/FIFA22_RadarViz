@@ -1,4 +1,4 @@
-import * as players from '../data/data.json';
+import players from '../data/data.json';
 
 export function displayPlayer1Info() {
     const playerSelect = document.getElementById('player1-select');

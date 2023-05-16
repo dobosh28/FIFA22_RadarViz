@@ -1,5 +1,5 @@
 import Chart from 'chart.js/auto';
-import * as players from './data/data.json';
+import players from './data/data.json';
 
 
 import { createLeague1DropDown} from "./scripts/league1_dropdown.js";
