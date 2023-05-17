@@ -1,10 +1,27 @@
+import players from "../data/data.json";
+import { createPlayer1DropDown } from "./player1_dropdown";
+
 export function createTeam1DropDown() {
   const league1Select = document.getElementById("league1-select");
   const team1Select = document.getElementById("team1-select");
 
+  const defaultTeamOption = document.createElement("option");
+  defaultTeamOption.value = "";
+  defaultTeamOption.text = "Choose a team";
+  // defaultTeamOption.disabled = true;
+  defaultTeamOption.selected = true;
+  team1Select.appendChild(defaultTeamOption);
+
   league1Select.onchange = function () {
     // Clear the options of the second dropdown menu
     team1Select.innerHTML = "";
+
+    // Add "Choose a team" option as the default option on change
+    team1Select.appendChild(defaultTeamOption.cloneNode(true));
+
+    // // Clear the player dropdown
+    // const player1Select = document.getElementById("player1-select");
+    // player1Select.innerHTML = "";
 
     // Get the selected league
     const selectedLeague = league1Select.value;
@@ -36,7 +53,7 @@ export function createTeam1DropDown() {
       ];
     } else if (selectedLeague === "la-liga - spain") {
       teams = [
-        "Real Madrid FC",
+        "Real Madrid CF",
         "Atlético de Madrid",
         "FC Barcelona",
         "Sevilla FC",
@@ -133,5 +150,11 @@ export function createTeam1DropDown() {
       option.text = teams[i];
       team1Select.appendChild(option);
     }
+
+    // Trigger change event to update the player dropdown
+    const changeEvent = new Event("change");
+    team1Select.dispatchEvent(changeEvent);
   };
+
+  createPlayer1DropDown();
 }

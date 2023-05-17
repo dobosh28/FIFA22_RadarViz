@@ -10,10 +10,10 @@ export function createLeague2DropDown() {
 
   // Populate the first dropdown menu with the leagues
   const league2Select = document.getElementById("league2-select");
-  for (let i = 0; i < leagues.length; i++) {
+  leagues.forEach((league) => {
     const option = document.createElement("option");
-    option.value = leagues[i].toLowerCase().replace(" ", "-");
-    option.text = leagues[i];
+    option.value = league.toLowerCase().replace(" ", "-");
+    option.text = league;
     league2Select.appendChild(option);
-  }
+  });
 }
