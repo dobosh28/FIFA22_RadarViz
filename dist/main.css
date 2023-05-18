@@ -80,7 +80,6 @@ select {
     border: 0;
     margin-left: 25px;
     border-radius: 5px;
-    
 }
 
 .button:hover {
@@ -111,11 +110,13 @@ select {
 .modal-header h2 {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 .modal-body {
     padding: 10px 20px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .modal-header {
@@ -124,6 +125,7 @@ select {
     color: white;
     text-align: center;
     justify-content: center;
+   
 }
 
 .close-button {
@@ -131,6 +133,7 @@ select {
     float: right;
     font-size: 20px;
     color: white;
+    align-items: center;
 }
 
 .close-button:hover, .close-button:focus {

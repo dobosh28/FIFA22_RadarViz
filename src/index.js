@@ -39,9 +39,9 @@ function setupModal() {
 
 function setupDropdowns() {
   createLeague1DropDown();
-  createTeam1DropDown();
-  createPlayer1DropDown();
-  displayPlayer1Info();
+  // createTeam1DropDown();
+  // createPlayer1DropDown();
+  // displayPlayer1Info();
 
   createLeague2DropDown();
   createTeam2DropDown();

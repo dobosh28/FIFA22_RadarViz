@@ -1,10 +1,26 @@
+import { createPlayer2DropDown } from "./player2_dropdown";
+
 export function createTeam2DropDown() {
   const league2Select = document.getElementById("league2-select");
   const team2Select = document.getElementById("team2-select");
 
+  const defaultTeamOption = document.createElement("option");
+  defaultTeamOption.value = "";
+  defaultTeamOption.text = "Choose a team";
+  // defaultTeamOption.disabled = true;
+  defaultTeamOption.selected = true;
+  team2Select.appendChild(defaultTeamOption);
+
   league2Select.onchange = function () {
     // Clear the options of the second dropdown menu
     team2Select.innerHTML = "";
+
+    // Add "Choose a team" option as the default option on change
+    team2Select.appendChild(defaultTeamOption.cloneNode(true));
+
+    // // Clear the player dropdown
+    // const player1Select = document.getElementById("player1-select");
+    // player1Select.innerHTML = "";
 
     // Get the selected league
     const selectedLeague = league2Select.value;
@@ -133,5 +149,11 @@ export function createTeam2DropDown() {
       option.text = teams[i];
       team2Select.appendChild(option);
     }
+
+    // Trigger change event to update the player dropdown
+    const changeEvent = new Event("change");
+    team2Select.dispatchEvent(changeEvent);
   };
+
+  createPlayer2DropDown();
 }

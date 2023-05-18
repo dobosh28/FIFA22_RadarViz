@@ -1,4 +1,3 @@
-import players from "../data/data.json";
 import { createPlayer1DropDown } from "./player1_dropdown";
 
 export function createTeam1DropDown() {

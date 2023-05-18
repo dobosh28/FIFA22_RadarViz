@@ -1,5 +1,5 @@
 import players from "../data/data.json";
-import { displayPlayer1Info } from "./display_player1_info.js";
+import { displayPlayer1Info } from "./display_player1_info";
 
 export function createPlayer1DropDown() {
   const team1Select = document.getElementById("team1-select");
@@ -30,18 +30,13 @@ export function createPlayer1DropDown() {
         option.text = player.Name;
         player1Select.appendChild(option);
       }
+
+      // Display the player info of the selected player
+      player1Select.onchange = function () {
+        const selectedPlayer = player1Select.value;
+        displayPlayer1Info(selectedPlayer);
+      }
     });
-
-    const changeEvent = new Event("change");
-    player1Select.dispatchEvent(changeEvent);
   };
-
-  player1Select.onchange = function () {
-    const selectedPlayer = player1Select.value;
-
-    if (selectedPlayer) {
-      // Call the displayPlayer1Info() function from the separate file
-      displayPlayer1Info();
-    }  
-  };
+  
 }
