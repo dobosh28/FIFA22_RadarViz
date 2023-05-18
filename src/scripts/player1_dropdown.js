@@ -30,13 +30,6 @@ export function createPlayer1DropDown() {
         option.text = player.Name;
         player1Select.appendChild(option);
       }
-
-      // Display the player info of the selected player
-      player1Select.onchange = function () {
-        const selectedPlayer = player1Select.value;
-        displayPlayer1Info(selectedPlayer);
-      }
     });
   };
-  
 }

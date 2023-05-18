@@ -149,11 +149,5 @@ export function createTeam1DropDown() {
       option.text = teams[i];
       team1Select.appendChild(option);
     }
-
-    // Trigger change event to update the player dropdown
-    const changeEvent = new Event("change");
-    team1Select.dispatchEvent(changeEvent);
   };
-
-  createPlayer1DropDown();
 }

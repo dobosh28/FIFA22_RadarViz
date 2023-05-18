@@ -39,9 +39,9 @@ function setupModal() {
 
 function setupDropdowns() {
   createLeague1DropDown();
-  // createTeam1DropDown();
-  // createPlayer1DropDown();
-  // displayPlayer1Info();
+  createTeam1DropDown();
+  createPlayer1DropDown();
+  displayPlayer1Info();
 
   createLeague2DropDown();
   createTeam2DropDown();
@@ -97,7 +97,6 @@ function createRadarChart(elementId, label, backgroundColor, borderColor) {
           max: 100,
           ticks: {
             stepSize: 20,
-            backgroundColor: "#000000",
           },
         },
       },
