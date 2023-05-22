@@ -2,6 +2,7 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/menus.scss ***!
   \*****************************************************************************************************/
 #menus {
+    padding-top: 8px;
     display: flex;
     justify-content: space-between;
     background-color: aliceblue;

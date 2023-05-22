@@ -52,7 +52,7 @@ export function createTeam2DropDown() {
       ];
     } else if (selectedLeague === "la-liga - spain") {
       teams = [
-        "Real Madrid FC",
+        "Real Madrid CF",
         "Atlético de Madrid",
         "FC Barcelona",
         "Sevilla FC",
